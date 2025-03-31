@@ -3,10 +3,12 @@
   --primary-color: #81d4fa;
   --accent-color: #ffb74d;
   --text-color: #455a64;
-  --row-gap-md: 24px;
-  --column-gap-md: 24px;
-  --row-gap-large: 48px;
-  --column-gap-large: 48px;
+  --row-gap-small: 1rem;
+  --row-gap-md: 1.5rem;
+  --row-gap-large: 3rem;
+  --column-gap-small: 1rem;
+  --column-gap-md: 1.5rem;
+  --column-gap-large: 3rem;
 }
 
 .dark-mode {

@@ -9,6 +9,7 @@
   --column-gap-small: 1rem;
   --column-gap-md: 1.5rem;
   --column-gap-large: 3rem;
+  --border-radius: 0.5rem;
 }
 
 .dark-mode {
@@ -58,6 +59,26 @@ h1,
 #search-bar-container input {
   display: grid;
   grid-column: span 3;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  text-indent: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--accent-color) !important;
+}
+
+#search-bar-container button {
+  border-radius: var(--border-radius);
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 :is(.icon, .highlight) {

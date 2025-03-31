@@ -4,3 +4,10 @@
   --accent-color: #ffb74d;
   --text-color: #455a64;
 }
+
+.dark-mode {
+  --background-color: #1e1e1e;
+  --primary-color: #5c6bc0;
+  --accent-color: #ffd54f;
+  --text-color: #cfd8dc;
+}

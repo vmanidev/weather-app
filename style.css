@@ -3,6 +3,8 @@
   --primary-color: #81d4fa;
   --accent-color: #ffb74d;
   --text-color: #455a64;
+  --row-gap: 24px;
+  --column-gap: 48px;
 }
 
 .dark-mode {
@@ -16,6 +18,30 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: sans-serif, system-ui;
+}
+
+main {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: var(--row-gap) var(--column-gap);
+}
+
+h1,
+#search-bar-container {
+  display: grid;
+  grid-column: span 2;
+}
+
+#forecast-container {
+  display: grid;
+  grid-column: span 1;
+}
+
+#weather-geo-map {
+  display: grid;
+  grid-column: 2/3;
 }
 
 :is(.btn, .icon, .highlight) {

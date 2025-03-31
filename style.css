@@ -3,8 +3,10 @@
   --primary-color: #81d4fa;
   --accent-color: #ffb74d;
   --text-color: #455a64;
-  --row-gap: 24px;
-  --column-gap: 48px;
+  --row-gap-md: 24px;
+  --column-gap-md: 24px;
+  --row-gap-large: 48px;
+  --column-gap-large: 48px;
 }
 
 .dark-mode {
@@ -25,13 +27,15 @@ main {
   width: 80%;
   margin: auto;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  gap: var(--row-gap) var(--column-gap);
+  gap: var(--row-gap-md) var(--column-gap-large);
 }
 
 h1,
 #search-bar-container {
   display: grid;
   grid-column: span 2;
+  gap: var(--column-gap-md);
+  height: 50px;
 }
 
 #forecast-container {
@@ -44,8 +48,22 @@ h1,
   grid-column: 2/3;
 }
 
-:is(.btn, .icon, .highlight) {
+#search-bar-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#search-bar-container input {
+  display: grid;
+  grid-column: span 3;
+}
+
+:is(.icon, .highlight) {
   color: var(--primary-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
 }
 
 :is(.weather-highlight, .alert, .call-to-action) {

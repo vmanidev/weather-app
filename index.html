@@ -7,20 +7,29 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       type="text/css"
     />
-    <script src="./index.js" type="text/javascript"></script>
+    <script src="./index.js" type="module"></script>
   </head>
   <body>
     <main>
       <h1 class="heading" role="heading">Weather App</h1>
       <section id="search-bar-container">
-        <input type="text" />
-        <button class="btn">Search</button>
+        <input type="text" id="search-input" />
+        <button class="btn" id="search-btn">Search</button>
+        <i id="target-location-icon" class="fa-solid fa-location-crosshairs"></i>
       </section>
       <section id="forecast-container">
         <div id="weather-forecast"></div>
         <div id="five-days-weather-forecast"></div>
       </section>
       <section id="weather-geo-map"></section>
+      <section id="landing-page">
+        <i class="fa-solid fa-cloud-sun-rain landing-page-icon"></i>
+        <p>
+          Quickly check the weather for your current location, search any city
+          for real-time updates, and stay prepared with a 5-day forecast. Your
+          reliable guide for staying ahead of the weather!
+        </p>
+      </section>
     </main>
   </body>
 </html>

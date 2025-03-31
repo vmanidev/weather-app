@@ -53,7 +53,7 @@ h1,
 
 #search-bar-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 
 #search-bar-container input {
@@ -72,6 +72,32 @@ input:focus {
   border-color: var(--accent-color) !important;
 }
 
+#search-bar-container #target-location-icon {
+  font-size: 2rem;
+  align-self: center;
+}
+
+i:hover:not(.landing-page-icon) {
+  color: var(--accent-color) !important;
+  cursor: pointer;
+}
+
+#landing-page {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: span 2;
+}
+
+#landing-page p {
+  grid-column: span 2;
+  line-height: 2rem;
+}
+
+.landing-page-icon {
+  color: var(--accent-color);
+  font-size: 10rem;
+}
+
 #search-bar-container button {
   border-radius: var(--border-radius);
   outline: none;
@@ -87,6 +113,10 @@ input:focus {
 
 .btn {
   background-color: var(--primary-color);
+}
+
+.btn:hover {
+  background-color: #4ab0de;
 }
 
 :is(.weather-highlight, .alert, .call-to-action) {

@@ -11,3 +11,20 @@
   --accent-color: #ffd54f;
   --text-color: #cfd8dc;
 }
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:is(.btn, .icon, .highlight) {
+  color: var(--primary-color);
+}
+
+:is(.weather-highlight, .alert, .call-to-action) {
+  color: var(--accent-color);
+}
+
+:is(.heading, label) {
+  color: var(--text-color);
+}
